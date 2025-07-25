@@ -1,0 +1,121 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* 🌼 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #9CA3AF;
+  font-size: 16px;
+}
+
+.nav-links li a.active {
+  font-weight: bold;
+  color: #111827;
+}
+
+.cart {
+  font-size: 16px;
+  color: #111827;
+}
+
+/* 🌸 Banner Section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.banner-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.banner-text .black {
+  color: #111827;
+  font-weight: bold;
+}
+
+.banner-text .orange {
+  color: #F97316;
+  font-weight: bold;
+}
+
+.banner-text p {
+  font-size: 16px;
+  color: #6B7280;
+}
+
+.banner-image {
+  flex: 1;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* 🔄 Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .banner-text h1 {
+    font-size: 36px;
+  }
+
+  .banner-text p {
+    font-size: 15px;
+  }
+
+  .banner-image {
+    margin-top: 20px;
+  }
+}
