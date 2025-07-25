@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +11,10 @@ body {
   color: #111827;
 }
 
-/* 🌼 Navbar */
+
 .navbar {
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +49,7 @@ body {
   color: #111827;
 }
 
-/* 🌸 Banner Section */
+
 .banner {
   display: flex;
   justify-content: space-between;
@@ -57,6 +59,8 @@ body {
 }
 
 .banner-text {
+  margin-left: 100px;
+  margin-right: 100px;
   flex: 1;
   max-width: 500px;
 }
@@ -83,6 +87,7 @@ body {
 }
 
 .banner-image {
+  margin-right: 100px;
   flex: 1;
 }
 
@@ -91,7 +96,7 @@ body {
   height: auto;
 }
 
-/* 🔄 Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -117,5 +122,170 @@ body {
 
   .banner-image {
     margin-top: 20px;
+  }
+}
+/* 🌿 Our Plants Section */
+.plants-section {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.plants-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.plants-section .orange {
+  color: #F97316;
+  font-weight: bold;
+}
+
+.plants-section .black {
+  color: #111827;
+  font-weight: bold;
+}
+
+.plants-subtitle {
+  font-size: 15px;
+  color: #6B7280;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plants-grid {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.plant-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.plant-card h3 {
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.plant-card .price {
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.plant-card button {
+  background-color: #F97316;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.plants-lover {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+.image-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-wrapper img {
+  width: 540px;
+  height: 550px;
+  
+  
+}
+
+.trusted-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Adjusted based on your image */
+  z-index: 10;
+}
+
+.trusted-badge img {
+  width: 80px;
+  height: auto;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+}
+
+.text h1 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.text ul li {
+  color: #6B7280;   
+  font-size: 22px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .image-wrapper {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .trusted-badge {
+    top: 10px;
+    left: 10px;
+  }
+
+  .trusted-badge img {
+    width: 70px;
   }
 }
