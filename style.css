@@ -201,6 +201,7 @@ body {
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
 }
 
 .plants-lover {
@@ -210,46 +211,51 @@ body {
 .content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 150px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .image-wrapper {
   position: relative;
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 300px;
+  max-width: 540px;
 }
 
 .image-wrapper img {
-  width: 540px;
-  height: 550px;
-  
-  
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
+
 .trusted-badge {
-  position: absolute;
+  position:absolute;
+  margin-bottom: 437px;
   top: 20px;
-  left: 20px; /* Adjusted based on your image */
+  right: 20px;
   z-index: 10;
 }
 
 .trusted-badge img {
-  width: 80px;
-  height: auto;
+  width: 286px;
+  height: 286px;
 }
 
+
 .text {
-  flex: 1;
+  flex: 1 1 300px;
   padding: 20px;
 }
 
 .text h1 {
-  font-size: 55px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .text ul {
@@ -258,16 +264,17 @@ body {
 }
 
 .text ul li {
-  color: #6B7280;   
-  font-size: 22px;
-  margin-bottom: 10px;
+  color: #6B7280;
+  font-size: 20px;
+  margin-bottom: 15px;
   line-height: 1.6;
 }
 
-/* 📱 Mobile Responsive */
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
+    padding: 20px 10px;
   }
 
   .image-wrapper {
@@ -275,17 +282,194 @@ body {
     margin-bottom: 20px;
   }
 
-  .text {
-    text-align: left;
-    padding: 0 10px;
-  }
-
   .trusted-badge {
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    right: 15px;
   }
 
   .trusted-badge img {
     width: 70px;
+  }
+
+  .text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+
+
+/* Newsletter */
+.newsletter {
+  background-image: url('B12A02-Responsive-Flowers/assets/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsletter .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.newsletter h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.newsletter form {
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+}
+
+.newsletter input[type="email"] {
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  flex: 1;
+  outline: none;
+}
+
+.newsletter button {
+  background-color: #f97316;
+  color: white;
+  padding: 14px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #ea580c;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #f3f4f6;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-left .logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color: #4b5563;
+  font-size: 15px;
+  max-width: 280px;
+}
+
+.footer-center,
+.footer-right {
+  flex: 1 1 200px;
+}
+
+.footer-center ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center li,
+.footer-right li {
+  margin-bottom: 32px;
+  color: #4B5563;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-center li:hover,
+.footer-right li:hover {
+  color: #f97316;
+}
+
+/* Social icons beside right column */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-x {
+  font-size: 20px;
+  color: #4b5563;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .newsletter h2 {
+    font-size: 28px;
+  }
+
+  .newsletter {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-center ul,
+  .footer-right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }
