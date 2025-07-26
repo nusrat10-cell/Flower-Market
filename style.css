@@ -96,7 +96,7 @@ body {
   height: auto;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -124,7 +124,7 @@ body {
     margin-top: 20px;
   }
 }
-/* 🌿 Our Plants Section */
+
 .plants-section {
   text-align: center;
   padding: 60px 40px;
@@ -298,8 +298,99 @@ body {
 }
 
 
+.latest-deals {
+  padding: 80px 0;
+  background-color: #f7f8fc;
+}
 
-/* Newsletter */
+.latest-deals .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.latest-deals h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.latest-deals h2 .highlight {
+  color: #f68c1f;
+}
+
+.latest-deals p {
+  color: #777;
+  font-size: 16px;
+  max-width: 650px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+}
+
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.deal-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-card {
+  height: 432px; 
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(1px);
+}
+
+.overlay h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.overlay h3 span {
+  font-weight: 600;
+}
+
+.overlay a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+
+
+
 .newsletter {
   background-image: url('B12A02-Responsive-Flowers/assets/news-letter-bg.png');
   background-size: cover;
@@ -357,7 +448,7 @@ body {
 }
 
 
-/* Footer */
+
 .footer {
   background-color: #f3f4f6;
   padding: 40px 20px;
@@ -413,7 +504,7 @@ body {
   color: #f97316;
 }
 
-/* Social icons beside right column */
+
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -441,7 +532,7 @@ body {
   line-height: 24px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .newsletter h2 {
     font-size: 28px;
